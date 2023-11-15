@@ -11,23 +11,34 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="startGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/play"
-        android:onClick="startGame"/>
+        app:layout_constraintVertical_bias="0.132"
+        app:srcCompat="@drawable/play" />
 
     <TextView
         android:id="@+id/score"
-        android:layout_width="341dp"
-        android:layout_height="159dp"
+        android:layout_width="350dp"
+        android:layout_height="78dp"
         android:textColor="#fff"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/save_progress_on_another_device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/save_progress_on_another_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_progress_on_another_device"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.836" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
